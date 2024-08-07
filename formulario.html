@@ -1,36 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
     <a href="./index.html">Inicio</a>
     
     <h2>Formulário</h2>
     
+    <!-- Formulário -->
     <form action="index.html" method="post">
+        <!-- inputs de nome -->
         <div>
             <div>
                 <label for="nome">Nome:</label>
             </div>
             <input type="text" name="nome" id="nome">
         </div>
-
+        <!-- inputs de e-mail-->
         <div>
             <div>
                 <label for="email">E-mail</label>
             </div>
             <input type="email" name="email" id="email">
         </div>
+        <!-- inputs de senha -->
         <div>
             <div>
                 <label for="email">Senha</label>
             </div>
             <input type="password" name="senha" id="senha">
         </div>
+        <!-- inputs de bio -->
+        <div>
+            <div>
+                <label for="bio">Fale sobre você.</label>
+            </div>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        </div>
         
+        <!-- input de radio -->
+        <div>
+            <div>
+                <h5>Tipo de Residencia</h5>
+            </div>
+            <div>
+                <input type="radio" name="residencia" id="casa" value="casa">
+                <label for="casa">Casa</label>
+    
+                <input type="radio" name="residencia" id="apartamento" value="apartamento">
+                <label for="apartamento">Apartamento</label>
+    
+                <input type="radio" name="residencia" id="sito" value="sito">
+                <label for="sito">Sitio</label>
+    
+                <input type="radio" name="residencia" id="fazenda" value="fazenda">
+                <label for="fazenda">Fazenda</label>
+            </div>
+        </div>
+
+        <!-- input select -->
+        <div>
+            <select name="plano" id="plano">
+                <option value="gratis">Plano - Gratuito</option>
+                <option value="silver">Plano - Silver</option>
+                <option value="master">Plano - Master</option>
+                <option value="Gold">Plano - Gold</option>
+            </select>
+        </div>
+
+        <!-- input checkbox -->
+        <div>
+            <div>
+                <h5>Interesses</h5>
+            </div>
+            <div>
+                <input type="checkbox" name="tecnologia" id="tecnologia">
+                <label for="tecnologia">Tecnologia</label>
+                
+                <input type="checkbox" name="esporte" id="esporte">
+                <label for="tecnologia">Esporte</label>
+                
+                <input type="checkbox" name="cinema" id="cinema">
+                <label for="cinema">cinema</label>
+                
+                <input type="checkbox" name="musica" id="musica">
+                <label for="musica">musica</label>
+            </div>
+        </div>
+
         <button>Salvar</button>
         <button type="reset">Limpar</button>
     </form>
