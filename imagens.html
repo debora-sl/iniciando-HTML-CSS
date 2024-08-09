@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+
+    <a href="./index.html">Inicio</a>
+
+    <!-- https://picsum.photos/200/300 -->
+    
+    <h2>Imagens</h2>
+
+    <div>
+        <img src="https://picsum.photos/300" alt="Foto Teste">
+    </div>
+
+    <div>
+        <!-- picture tag de agrupamento -->
+        <picture>
+            <source srcset="https://picsum.photos/100"
+            media="(min-width/: 600px)">
+            <img src="https://picsum.photos/600" alt="Foto menor">
+        </picture>
+    </div>
+
+    <!--
+        Exemplo de URL Absoluta "https://picsum.photos/100"
+        Exemplo de URL Relativa "../images/image_teste.jpeg"
+    -->
+</body>
+</html>
