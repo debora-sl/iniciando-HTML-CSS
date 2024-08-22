@@ -1,0 +1,10 @@
+/* Seletor id*/
+#primeiro-colocado{
+    background-color: yellow;
+}
+
+/* Seletor class*/
+.segundo-colocado{
+    background-color: darkgray;
+    color: aliceblue;
+}
