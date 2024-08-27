@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
+
+    <style>
+
+
+        div{
+            /* margin é aplicada nos quatro lados*/
+            margin: 20px;
+        }
+        #div1 {
+            /* shorthand sintax <line-width | <line-style> | color */
+            border: 3px solid red;
+            /* pading é aplicado 10 em cima e embaixo e 0 na direita e esquerda*/
+            padding: 10px 0px;
+        }
+
+        #div2{
+            border: 5px solid green;
+            padding: 10px;         
+        }
+    </style>
 </head>
 <body>
     <a href="./css_basico.html">Inicio</a>
+
+    <h2>Box Model - Modelo de Cixa</h2>
+
+    <div id="div1">Conteudo #01</div>
+    <div id="div2">Conteudo #02</div>
 </body>
 </html>
