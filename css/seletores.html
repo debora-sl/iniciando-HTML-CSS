@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seletores</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        /* selecionando pelas tags/ elementos */
+        section, span, p{
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            background-color: crimson;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        /* selecionando pelas classes */
+        .circulo {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            border-radius: 25px;
+            background-color: blueviolet;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .destaque {
+            border: 4px yellow solid;
+            color: yellow;
+            border-radius: 29px;
+        }
+
+        /* selecionando pelo ID */        
+        #botao-compra {
+            height: 30px;
+            width: 120px;
+            background-color: forestgreen;
+            border: solid 1px white;
+            border-radius: 15px;
+            text-transform: uppercase;
+        }
+
+        [href] {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <a href="./css_basico.html">Inicio</a>
-    
+
+    <h2>Seletores</h2>
+
+    <h3>Seletor de Elementos</h2>
+
+    <section>1</section>
+    <span>2</span>
+    <p>3</p>
+
+    <h3>Seletores de Classe</h3>
+    <div class="circulo">4</div>
+    <div class="circulo destaque">5</div>
+
+    <h3>Seletores de ID</h3>
+    <button id="botao-compra">Comprar</button>
+
 </body>
 </html>
